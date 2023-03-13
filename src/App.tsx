@@ -21,7 +21,36 @@ const ANSWERS = {
   ),
   
   Contacto: (
-    <p>Puedes Contactar directamente conmigo por mi mail, el cual es: <a href="nicocugno2@gmail.com"></a>, por mi telefono el cual es: 3517020163 o por mi linkedin el cual es: <a href="..."></a>  </p>
+    <p>
+      Puedes Contactar directamente conmigo por mi {" "}
+      <a
+        className="underline"
+        href="https://github.com/nicocugno2"
+        rel="noopener noreferrer"
+        target="_blank"
+        >
+        Github
+      </a>{" "}
+        ,mi{" "}
+      <a 
+        className="underline"
+        href="https://mail.google.com/mail/u/3/#inbox"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Email
+      </a>{" "}
+      o por mi{" "}
+      <a
+        className="underline"
+        href="https://www.linkedin.com/in/nicol%C3%A1s-cugno-8b692b1bb/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Linkedin
+      </a>
+      .
+  </p>
   ),
 
   default: (
@@ -120,7 +149,7 @@ function ChatBot(){
             name="question"
           />
           <button className={`px-4 py-2 bg-purple-900 rounded-lg rounded-l-none ${loading ? "bg-blue-300" : "bg-blue-500" }`}  type="submit">
-            Send
+            ↩
           </button>
         </form>
       </div>
